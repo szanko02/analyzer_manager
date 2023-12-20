@@ -1,0 +1,6 @@
+<resources>
+    <style name="SeekBarStyle" parent="Widget.AppCompat.SeekBar">
+        <item name="android:height">100dp</item>
+        <!-- Additional style attributes -->
+    </style>
+</resources>

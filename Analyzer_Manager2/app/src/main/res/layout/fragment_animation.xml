@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.animation.AnimationFragment">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#4A673AB7"
+        app:cardElevation="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:paddingTop="4dp"
+                android:id="@+id/text_changesmooth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/smooth"
+                android:textAlignment="center"
+                android:textSize="33.5sp"
+                app:layout_constraintBottom_toTopOf="@id/smoothSeekBar"
+                android:layout_marginBottom="8dp"
+                />
+
+            <SeekBar
+                android:paddingTop="4dp"
+                android:id="@+id/smoothSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="100"
+                android:progress="50"
+                android:progressTint="#FF0000"
+                android:thumbTint="@color/white"
+                style="@style/SeekBarStyle" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/minValueSmooth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/maxValueSmooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="1" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/smoothLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smooth: 0.5"
+                android:layout_gravity="center_horizontal" />
+            <Button
+                android:id="@+id/bApplySmooth"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:text="Apply"
+                android:layout_marginTop="8dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

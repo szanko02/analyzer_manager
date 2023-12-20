@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_changeip">
+
+    <fragment
+        android:id="@+id/nav_changeip"
+        android:name="com.example.analyzer_manager.ui.changeip.ChangeIpFragment"
+        android:label="@string/menu_changeip"
+        tools:layout="@layout/fragment_changeip" />
+
+    <fragment
+        android:id="@+id/nav_brightness"
+        android:name="com.example.analyzer_manager.ui.brightness.BrightnessFragment"
+        android:label="@string/menu_brightness"
+        tools:layout="@layout/fragment_brightness" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_size"
+        android:name="com.example.analyzer_manager.ui.size.SizeFragment"
+        android:label="@string/menu_size"
+        tools:layout="@layout/fragment_size" />
+
+    <fragment
+        android:id="@+id/nav_animation"
+        android:name="com.example.analyzer_manager.ui.animation.AnimationFragment"
+        android:label="@string/animation"
+        tools:layout="@layout/fragment_animation" />
+
+    <fragment
+        android:id="@+id/nav_color"
+        android:name="com.example.analyzer_manager.ui.color.ColorFragment"
+        android:label="@string/color"
+        tools:layout="@layout/fragment_color" />
+
+    <fragment
+        android:id="@+id/nav_signal"
+        android:name="com.example.analyzer_manager.ui.signal.SignalFragment"
+        android:label="@string/signal"
+        tools:layout="@layout/fragment_signal" />
+
+</navigation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_changeip"
+            android:icon="@drawable/ic_menu_ip"
+            android:title="@string/menu_changeip" />
+        <item
+            android:id="@+id/nav_brightness"
+            android:icon="@drawable/ic_menu_brightness"
+            android:title="@string/menu_brightness" />
+        <item
+            android:id="@+id/nav_size"
+            android:icon="@drawable/ic_menu_size"
+            android:title="@string/menu_size" />
+        <item
+            android:id="@+id/nav_animation"
+            android:icon="@drawable/ic_menu_animation"
+            android:title="@string/animation" />
+        <item
+            android:id="@+id/nav_color"
+            android:icon="@drawable/ic_menu_color"
+            android:title="@string/color" />
+        <item
+            android:id="@+id/nav_signal"
+            android:icon="@drawable/ic_menu_signal"
+            android:title="@string/signal" />
+    </group>
+</menu>
